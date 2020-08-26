@@ -104,18 +104,35 @@ a {
 }
 
 /* Блог Герой */
-/* Бэкграунд для видимости, потом удалить */
+
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--footer-background-color);
+    text-align: center;
+}
+
 .hero .title {
+    width: 696px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36x;
+    line-height: 1.37;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-white-color);
-    background-color: gray;
 }
 .button {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -125,13 +142,40 @@ a {
     background-color: var(--accent-color);
 }
 /* Наши преимущества */
+.advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .advantages .title {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 700d;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
+}
+
+.advantages-item {
+    display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.advantages-list {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+}
+
+.advantages-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.advantages-text {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .services .primary,
