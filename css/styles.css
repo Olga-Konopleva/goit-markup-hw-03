@@ -144,7 +144,6 @@ a {
 /* Наши преимущества */
 .advantages {
     padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .advantages .title {
@@ -178,8 +177,17 @@ a {
     margin-bottom: 0;
 }
 
+/* Чем мы занимаемся */
+
+.services {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .services .primary,
 .command .primary {
+    margin-top: 0;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -188,9 +196,32 @@ a {
     color: var(--title-text-color);
 }
 
+.services-items {
+    display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.services-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.services-list {
+    display: block;
+}
+
 /* Наша команда */
 
+.command {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--secondary-background-color);
+}
+
 .command .title {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -198,7 +229,30 @@ a {
     color: var(--title-text-color);
 }
 
+.command-items {
+    display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.command-list {
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: var(--primary-white-color);
+}
+
+.command-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.command-picture {
+    margin-bottom: 30px;
+}
+
 .command .text {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
