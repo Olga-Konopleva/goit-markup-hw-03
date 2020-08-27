@@ -21,9 +21,15 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .decoration {
@@ -51,7 +57,7 @@ a {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--logo-color);
 }
@@ -261,10 +267,13 @@ a {
 /* Footer */
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--footer-background-color);
 }
 
 .direction {
+    margin-top: 20px;
     font-style: normal;
     color: var(--primary-white-color);
 }
@@ -273,16 +282,58 @@ a {
     color: var(--primary-white-color);
 }
 
+.footer .logo {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+}
+
 .direction .link {
-    
+    margin-top: 9px;
+    display: block;
     color: var(--footer-text-color);
 }
 
+/* .direction .link + .link {
+    padding-top: 9px;
+} */
+
 /* Портфолио */
+
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.portfolio-title {
+    display: none;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 34px;
+}
+
+.filter .item + .item {
+    margin-left: 8px;
+}
+
 .filter .item {
-    
     color: var(--title-text-color);
     background-color: var(--secondary-background-color);
+}
+
+.portfolio button {
+    display: block;
+    padding: 6px 22px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    border: 0;
 }
 
 .filter button:hover,
@@ -296,6 +347,8 @@ a {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
+    margin-top: 0;
+    margin-bottom: 4px;
 }
 
 .works .text {
@@ -303,4 +356,22 @@ a {
     line-height: 30px;             
     letter-spacing: 1.9;
     color: var(--primary-text-color);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.portfolio .works {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: -15px;
+}
+
+.works-item {
+    margin: 15px;
+    /* width: calc((100% - 2 * 30px) / 3); */
+}
+
+.work-desc {
+    padding: 20px 24px;
 }
